@@ -12,6 +12,7 @@ import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
 import ListItemTitle from './ListItemTitle';
+import styles from './styles.scss';
 
 export default class FeaturePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -31,7 +32,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
         <H1>
           <FormattedMessage {...messages.header} />
         </H1>
-        <List>
+        <List className={styles.red}>
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.scaffoldingHeader} />
